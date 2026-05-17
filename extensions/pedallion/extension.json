@@ -1,0 +1,14 @@
+{
+    "id": "pedallion",
+    "name": "Pedallion",
+    "version": "1.0.0",
+    "description": "Pedallion distributor API — product sync, orders, product groups",
+    "author": "Agila Suites",
+    "tier": "community",
+    "license_required": false,
+    "permissions": [
+        {"key": "manage_pedallion",        "parent": "manage_marketplace_api", "subgroup": "Pedallion"},
+        {"key": "manage_pedallion_orders", "parent": "manage_marketplace_api", "subgroup": "Pedallion"}
+    ],
+    "nav": []
+}

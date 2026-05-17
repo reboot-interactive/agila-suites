@@ -1,0 +1,44 @@
+/* ============================================================
+   REVIEWS PAGE
+   ============================================================ */
+
+/* Star ratings */
+.review-stars { display: inline-flex; gap: 1px; }
+.star-filled { color: #f59e0b; }
+.star-empty { color: #d1d5db; }
+
+/* Platform badges */
+.review-platform {
+    display: inline-block; padding: 2px 8px; border-radius: 99px;
+    font-size: 11px; font-weight: 600; letter-spacing: .02em;
+}
+.review-platform--shopee { background: #fff1f2; color: #e11d48; }
+.review-platform--lazada { background: #eff6ff; color: #1d4ed8; }
+
+/* Review image thumbnails */
+.review-thumb {
+    width: 64px; height: 64px; object-fit: cover;
+    border-radius: 6px; border: 1px solid var(--border-light);
+    transition: transform var(--transition-fast);
+}
+.review-thumb:hover { transform: scale(1.08); }
+
+/* Inline media in table rows */
+.review-media-inline {
+    display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
+}
+.review-thumb-sm {
+    width: 32px; height: 32px; object-fit: cover;
+    border-radius: 4px; border: 1px solid var(--border-light);
+}
+.review-media-more {
+    font-size: 11px; color: var(--text-muted); font-weight: 600;
+}
+.review-media-badge {
+    display: inline-flex; align-items: center; gap: 2px;
+    font-size: 11px; color: #6366f1; font-weight: 600;
+    background: #eef2ff; padding: 2px 6px; border-radius: 4px;
+}
+
+/* Review detail page */
+.review-detail { padding: 4px 0; }

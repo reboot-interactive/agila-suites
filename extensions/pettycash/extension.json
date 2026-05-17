@@ -1,0 +1,27 @@
+{
+    "id": "pettycash",
+    "name": "Petty Cash",
+    "version": "1.1.0",
+    "description": "Staff petty cash tracking — credits and expense logging",
+    "author": "Agila Suites",
+    "tier": "community",
+    "license_required": false,
+    "permissions": [
+        {"key": "view_petty_cash",              "sort": 60},
+        {"key": "view_petty_cash_transactions", "parent": "view_petty_cash"},
+        {"key": "manage_petty_cash_settings",   "parent": "view_petty_cash"}
+    ],
+    "nav": [
+        {
+            "group": "Petty Cash",
+            "icon": "wallet",
+            "permission": "view_petty_cash",
+            "priority": 40,
+            "items": [
+                { "label": "Petty Cash", "route": "ext.pettycash.index", "permission": "view_petty_cash_transactions" },
+                { "label": "Settings", "route": "ext.pettycash.settings", "permission": "manage_petty_cash_settings" }
+            ]
+        }
+    ],
+    "tables": ["petty_cash_transactions", "petty_cash_categories", "petty_cash_user_roles"]
+}

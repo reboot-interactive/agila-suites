@@ -1,0 +1,64 @@
+/* ============================================================
+   PURCHASING — Purchase Order line item images
+   ============================================================ */
+
+.po-item-img-cell {
+    text-align: center;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.po-item-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    display: inline-block;
+}
+
+.po-item-img-placeholder {
+    background-image: linear-gradient(135deg, var(--surface-alt) 25%, transparent 25%, transparent 50%, var(--surface-alt) 50%, var(--surface-alt) 75%, transparent 75%);
+    background-size: 8px 8px;
+    opacity: 0.4;
+}
+
+/* ============================================================
+   PURCHASING — Receive page
+   ============================================================ */
+
+.po-receive-col-img      { width: 48px; }
+.po-receive-col-sku      { width: 120px; }
+.po-receive-col-qty      { width: 90px; text-align: right; }
+.po-receive-col-prev     { width: 100px; text-align: right; }
+.po-receive-col-rem      { width: 80px; text-align: right; }
+.po-receive-col-receive  { width: 150px; }
+.po-receive-col-cost     { width: 90px; text-align: center; }
+
+.po-receive-num { text-align: right; }
+.po-receive-cost-cell { text-align: center; }
+
+.po-receive-input-group {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.po-receive-input { width: 90px; }
+
+.po-receive-complete {
+    color: var(--success, #16a34a);
+    font-weight: 600;
+}
+
+.po-receive-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.po-receive-actions-spacer { flex: 1; }
+

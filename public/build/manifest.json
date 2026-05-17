@@ -1,0 +1,26 @@
+{
+  "extensions/installer/assets/install.css": {
+    "file": "assets/install-C9G5Ng92.css",
+    "src": "extensions/installer/assets/install.css",
+    "isEntry": true,
+    "name": "install",
+    "names": [
+      "install.css"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DuHpZy8v.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CGitQhgl.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

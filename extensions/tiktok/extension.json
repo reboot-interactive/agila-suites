@@ -1,0 +1,24 @@
+{
+    "id": "tiktok",
+    "name": "TikTok Shop",
+    "version": "1.0.0",
+    "description": "TikTok Shop integration — OAuth, product sync, API explorer",
+    "author": "Agila Suites",
+    "tier": "community",
+    "license_required": false,
+    "permissions": [
+        {"key": "manage_tiktok",        "parent": "manage_marketplace_api", "subgroup": "TikTok Shop"},
+        {"key": "manage_tiktok_orders", "parent": "manage_marketplace_api", "subgroup": "TikTok Shop"}
+    ],
+    "tables": [
+        "tiktok_settings",
+        "tiktok_api_logs",
+        "tiktok_categories",
+        "tiktok_product_groups",
+        "tiktok_product_group_products",
+        "tiktok_orders",
+        "tiktok_order_products",
+        "tiktok_order_status_map"
+    ],
+    "nav": []
+}

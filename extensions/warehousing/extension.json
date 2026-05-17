@@ -1,0 +1,30 @@
+{
+    "id": "warehousing",
+    "name": "Warehousing",
+    "version": "1.0.0",
+    "description": "Multi-location inventory tracking with stock transfers",
+    "author": "Agila Suites",
+    "tier": "community",
+    "license_required": false,
+    "permissions": [
+        {"key": "manage_warehousing",          "sort": 50},
+        {"key": "manage_warehouse_locations",  "parent": "manage_warehousing"},
+        {"key": "manage_warehouse_transfers",  "parent": "manage_warehousing"},
+        {"key": "manage_warehouse_inventory",  "parent": "manage_warehousing"}
+    ],
+    "nav": [
+        {
+            "group": "Warehousing",
+            "icon": "warehouse",
+            "permission": "manage_warehousing",
+            "priority": 35,
+            "items": [
+                { "label": "Locations", "route": "ext.warehousing.locations.index", "permission": "manage_warehouse_locations" },
+                { "label": "Transfers", "route": "ext.warehousing.transfers.index", "permission": "manage_warehouse_transfers" },
+                { "label": "Stock by Location", "route": "ext.warehousing.inventory.index", "permission": "manage_warehouse_inventory" },
+                { "label": "Stock Adjustment", "route": "ext.warehousing.inventory.adjust", "permission": "manage_warehouse_inventory" }
+            ]
+        }
+    ],
+    "tables": ["warehouses", "warehouse_inventory", "warehouse_transfers", "warehouse_transfer_items"]
+}
